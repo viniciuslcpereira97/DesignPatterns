@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPatterns\Contracts\DatabaseContracts;
+namespace PHPatterns\Contracts\Database;
 
 interface Model
 {
