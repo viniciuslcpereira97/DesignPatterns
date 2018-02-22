@@ -1,30 +1,30 @@
-***REMOVED***
+<?php
 
 namespace PHPatterns\Database\Models;
 
-use PHPatterns\Contracts\DatabaseContracts\Model as ModelContract;
+use PHPatterns\Contracts\Database\Model as ModelContract;
 
 abstract class Model implements ModelContract
-***REMOVED***
+{
     /**
-     * 
+     *
      */
-    public static function find(Int $id) ***REMOVED***
+    public static function find(Int $id) {
         return $id;
-***REMOVED***
+    }
 
     /**
      *
      */
-    public static function all() ***REMOVED***
+    public static function all() {
         return "all";
-***REMOVED***
+    }
 
     /**
      *
      */
-    public static function create(Array $attr) ***REMOVED***
+    public static function create(Array $attr) {
         return $attr;
-***REMOVED***
+    }
 
-***REMOVED***
+}

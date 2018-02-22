@@ -1,23 +1,23 @@
-***REMOVED***
+<?php
 
 namespace PHPatterns\Singleton;
 
 abstract class Singleton
-***REMOVED***
+{
 
     private static $instance;
 
     /**
      *
      */
-    public static function getInstance() ***REMOVED***
+    public static function getInstance() {
         if(!isset(self::$instance))
             self::$instance = new static;
         return self::$instance;
-***REMOVED***
+    }
 
-    private function __construct() ***REMOVED***
+    private function __construct() {
 
-***REMOVED***
+    }
 
-***REMOVED***
+}

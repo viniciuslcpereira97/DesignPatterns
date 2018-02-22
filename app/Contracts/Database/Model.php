@@ -1,9 +1,9 @@
-***REMOVED***
+<?php
 
 namespace PHPatterns\Contracts\DatabaseContracts;
 
 interface Model
-***REMOVED***
+{
     /**
      * Find ocurrences at table where id
      * @var Int
@@ -23,4 +23,4 @@ interface Model
      */
     public static function create(Array $attr);
 
-***REMOVED***
+}

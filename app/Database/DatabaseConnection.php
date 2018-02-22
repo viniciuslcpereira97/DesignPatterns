@@ -1,16 +1,16 @@
-***REMOVED***
+<?php
 
-***REMOVED***
+namespace PHPatterns\Database;
 
-***REMOVED***
+use \PDO as PDO;
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
+class DatabaseConnection extends \PHPatterns\Singleton\Singleton
+{
+    private $connection;
 
-    protected function __construct() ***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
+    protected function __construct() {
+        echo "construct";
+        $this->connection = new PDO('mysql:host=localhost;dbname=php_patterns_test', 'root', 'shambala');
+    }
 
-***REMOVED***
+}
