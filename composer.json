@@ -1,0 +1,15 @@
+***REMOVED***
+    "name": "viniciuslcpereira/phpatterns",
+    "description": "PHP Patterns tests project",
+    "keywords": ["php", "design patterns"],
+    "license": "MIT",
+    "type": "project",
+    "require": ***REMOVED***
+        "php": ">=7.0"
+***REMOVED***,
+    "autoload": ***REMOVED***
+            "psr-4": ***REMOVED***
+                "PHPatterns\\": "app/"
+        ***REMOVED***
+***REMOVED***
+***REMOVED***
