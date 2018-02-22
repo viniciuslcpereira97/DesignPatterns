@@ -5,11 +5,26 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": ">=7.0"
+        "php": ">=7.0",
+        "viniciuslcpereira97/BRquent": "1.0"
     },
     "autoload": {
             "psr-4": {
                 "PHPatterns\\": "app/"
             }
+    },
+    "repositories": {
+        "brquent": {
+            "type": "package",
+            "package": {
+                "name": "viniciuslcpereira97/BRquent",
+                "version": "1.0",
+                "source": {
+                    "url": "https://github.com/viniciuslcpereira97/BRquent.git",
+                    "type": "git",
+                    "reference": "origin/master"
+                }
+            }
+        }
     }
 }
