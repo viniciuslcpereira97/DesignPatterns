@@ -2,6 +2,8 @@
 
 namespace PHPatterns\Singleton;
 
+use PHPatterns\Contracts\SingletonContract;
+
 /**
  * Singleton Pattern
  *
@@ -9,10 +11,10 @@ namespace PHPatterns\Singleton;
  * instance of the object
  *
  */
-abstract class Singleton
+abstract class Singleton implements SingletonContract
 {
-    /* instance variable */
-    private static $instance;
+    /* instances variable */
+    private static $instances;
 
     /**
      *
@@ -20,9 +22,10 @@ abstract class Singleton
      *
      */
     public static function getInstance() {
-        if(!isset(self::$instance))
-            self::$instance = new static;
-        return self::$instance;
+        $called_class = get_called_class();
+        if(!isset(self::$instances[$called_class]))
+            self::$instances[$called_class] = new $called_class;
+        return self::$instances[$called_class];
     }
 
     /**
