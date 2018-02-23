@@ -8,6 +8,9 @@ use ReflectionClass;
 trait ModelsTrait
 {
 
+    /*----------- Database Functions -----------*/
+
+
     /**
      *
      * @TODO
@@ -18,6 +21,10 @@ trait ModelsTrait
     private function getById(Int $id) {
         return "get by id";
     }
+
+
+    /*----------- Model Functions -----------*/
+
 
     /**
      *
