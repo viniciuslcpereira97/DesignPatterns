@@ -2,11 +2,15 @@
 
 namespace PHPatterns\Database\Models;
 
+use PDO;
+use PHPatterns\Traits\ModelsTrait;
 use PHPatterns\Database\DatabaseConnection;
 use PHPatterns\Contracts\Database\Model as ModelContract;
 
 abstract class Model implements ModelContract
 {
+
+    use ModelsTrait;
 
     private static $database;
 
@@ -22,7 +26,8 @@ abstract class Model implements ModelContract
      *
      */
     public static function find(Int $id) {
-        return self::$database->query();
+        $instance = new static;
+        return $instance->getById($id);
     }
 
     /**

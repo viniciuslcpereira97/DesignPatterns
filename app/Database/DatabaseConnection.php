@@ -6,6 +6,11 @@ use \PDO as PDO;
 
 class DatabaseConnection extends \PHPatterns\Singleton\Singleton
 {
+    /**
+     *
+     * Holds on PDO connection
+     *
+     */
     private $connection;
 
     /**
