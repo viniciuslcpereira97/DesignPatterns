@@ -2,7 +2,7 @@
 
 namespace PHPatterns\Observers;
 
-class NewUserObserver extends Observable
+class NewUserObserver extends Observer
 {
 
     /**

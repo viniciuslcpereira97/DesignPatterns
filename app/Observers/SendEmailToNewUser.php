@@ -2,9 +2,9 @@
 
 namespace PHPatterns\Observers;
 
-class SendEmailToNewUser extends Observable
+class SendEmailToNewUser extends Observer
 {
-    
+
     /**
      *
      * Update from subject
