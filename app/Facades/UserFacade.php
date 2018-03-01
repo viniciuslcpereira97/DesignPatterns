@@ -17,8 +17,7 @@ class UserFacade
         $user = new User;
         if(isset($userAttr) and $userAttr !== [])
             $user->setNickname($userAttr['nickname']);
-        $coupon = Coupon::generate();
-        $user->addCoupon($coupon);
+        $user->addCoupon(Coupon::generate());
         var_dump($user);
     }
 
