@@ -10,7 +10,7 @@ class NewUserEventProvider
      * Registers all observers of event
      *
      */
-    const providers = [
+    const observers = [
         'PHPatterns\Observers\NewUserObserver',
         'PHPatterns\Observers\SendEmailToNewUser',
     ];
@@ -21,7 +21,7 @@ class NewUserEventProvider
      *
      */
     public static function getObservers() {
-        return self::providers;
+        return self::observers;
     }
 
 }
