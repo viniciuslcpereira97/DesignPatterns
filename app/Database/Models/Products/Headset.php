@@ -14,7 +14,6 @@ class Headset extends Product
      */
     public function accept(ProductVisitor $visitor) {
         $visitor->getHeadsetDiscount($this);
-        echo $this->getPrice();
     }
 
 }
