@@ -2,7 +2,7 @@
 
 namespace PHPatterns\Behavioral\Events;
 
-class Event implements \SplSubject
+abstract class Event implements \SplSubject
 {
 
     // Observers attached to subject
