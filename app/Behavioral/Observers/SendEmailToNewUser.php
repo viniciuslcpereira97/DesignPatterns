@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPatterns\Observers;
+namespace PHPatterns\Behavioral\Observers;
 
 class SendEmailToNewUser extends Observer
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPatterns\Singleton;
+namespace PHPatterns\Creational\Singleton;
 
 use PHPatterns\Contracts\SingletonContract;
 

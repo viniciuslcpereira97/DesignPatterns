@@ -4,7 +4,7 @@ namespace PHPatterns\Database;
 
 use \PDO as PDO;
 
-class DatabaseConnection extends \PHPatterns\Singleton\Singleton
+class DatabaseConnection extends \PHPatterns\Creational\Singleton\Singleton
 {
     /**
      *

@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPatterns\Facades;
+namespace PHPatterns\Structural\Facades;
 
 use PHPatterns\Database\Models\User;
 use PHPatterns\Database\Models\Coupon;

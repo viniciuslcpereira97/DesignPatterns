@@ -2,7 +2,7 @@
 
 namespace PHPatterns\Database\Models\Products;
 
-use PHPatterns\Visitors\ProductVisitor;
+use PHPatterns\Behavioral\Visitors\ProductVisitor;
 
 class Notebook extends Product
 {

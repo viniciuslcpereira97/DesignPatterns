@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPatterns\Visitors;
+namespace PHPatterns\Behavioral\Visitors;
 
 class ProductVisitor
 {

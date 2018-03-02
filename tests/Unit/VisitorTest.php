@@ -4,7 +4,7 @@ namespace Tests;
 
 use Tests\TestCase;
 
-use PHPatterns\Visitors\ProductVisitor;
+use PHPatterns\Behavioral\Visitors\ProductVisitor;
 use PHPatterns\Database\Models\Products\Headset;
 use PHPatterns\Database\Models\Products\Notebook;
 

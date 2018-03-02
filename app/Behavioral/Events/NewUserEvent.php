@@ -1,8 +1,8 @@
 <?php
 
-namespace PHPatterns\Events;
+namespace PHPatterns\Behavioral\Events;
 
-use PHPatterns\Events\Event;
+use PHPatterns\Behavioral\Events\Event;
 use PHPatterns\Providers\NewUserEventProvider as EventProvider;
 
 class NewUserEvent extends Event

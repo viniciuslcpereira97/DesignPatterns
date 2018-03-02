@@ -3,7 +3,7 @@
 namespace Tests;
 
 use Tests\TestCase;
-use PHPatterns\Singleton\Singleton;
+use PHPatterns\Creational\Singleton\Singleton;
 
 class InstantiationTest extends Singleton {}
 

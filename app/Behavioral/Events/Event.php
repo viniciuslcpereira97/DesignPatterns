@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPatterns\Events;
+namespace PHPatterns\Behavioral\Events;
 
 class Event implements \SplSubject
 {
