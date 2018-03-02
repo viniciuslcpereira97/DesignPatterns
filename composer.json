@@ -8,9 +8,14 @@
         "php": ">=7.0"
     },
     "autoload": {
-            "psr-4": {
-                "PHPatterns\\": "app/"
-            }
+        "psr-4": {
+            "PHPatterns\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "Tests/"
+        }
     },
     "repositories": {
         "brquent": {
@@ -25,5 +30,8 @@
                 }
             }
         }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6"
     }
 }
