@@ -11,7 +11,7 @@ class ProductVisitor
      *
      */
     public function getNotebookDiscount($product) {
-        $product->setPrice($product->getPrice() - 250.00);
+        return ($product->getPrice() - 250.00);
     }
 
     /**
@@ -20,7 +20,7 @@ class ProductVisitor
      *
      */
     public function getHeadsetDiscount($product) {
-        $product->setPrice($product->getPrice() - 150.00);
+        return ($product->getPrice() - 150.00);
     }
 
 }

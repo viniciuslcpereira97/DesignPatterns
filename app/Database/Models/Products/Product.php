@@ -3,8 +3,9 @@
 namespace PHPatterns\Database\Models\Products;
 
 use PHPatterns\Database\Models\Model;
+use PHPatterns\Behavioral\Visitors\ProductVisitor;
 
-class Product extends Model
+abstract class Product extends Model
 {
 
     /* Product name */
@@ -60,5 +61,12 @@ class Product extends Model
     public function getName() {
         return $this->name;
     }
+
+    /**
+     *
+     * Gets price with disccount
+     *
+     */
+    public abstract function getPriceWithDisccount();
 
 }

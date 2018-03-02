@@ -9,11 +9,17 @@ class Notebook extends Product
 
     /**
      *
-     * Accept visitor
+     * Accepts visitor
      *
      */
-    public function accept(ProductVisitor $visitor) {
-        $visitor->getNotebookDiscount($this);
+    public function accept() {
+        $visitor = new ProductVisitor;
+        return $visitor->getNotebookDiscount($this);
+    }
+
+    public function getPriceWithDisccount() {
+        $visitor = new ProductVisitor;
+        return $this->accept($visitor);        
     }
 
 }
