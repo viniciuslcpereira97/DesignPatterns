@@ -11,8 +11,8 @@ class NewUserEventProvider
      *
      */
     const observers = [
-        'PHPatterns\Observers\NewUserObserver',
-        'PHPatterns\Observers\SendEmailToNewUser',
+        'PHPatterns\Behavioral\Observers\NewUserObserver',
+        'PHPatterns\Behavioral\Observers\SendEmailToNewUser',
     ];
 
     /**

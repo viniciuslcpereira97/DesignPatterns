@@ -8,16 +8,16 @@ use PHPatterns\Providers\NewUserEventProvider as EventProvider;
 class NewUserEvent extends Event
 {
 
-    // User name
-    private $name;
+    // User instance
+    private $user;
 
     /**
      *
      * New user constructor
      *
      */
-    public function __construct($name) {
-        $this->name = $name;
+    public function __construct($user) {
+        $this->user = $user;
         $this->attachObservers(function() {
             return $this->notify();
         });
@@ -40,9 +40,8 @@ class NewUserEvent extends Event
      * Name getter
      *
      */
-    public function getName()
-    {
-        return $this->name;
+    public function getName() {
+        return $this->user->name;
     }
 
 }

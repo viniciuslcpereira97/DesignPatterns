@@ -5,6 +5,7 @@ namespace PHPatterns\Database\Models;
 use PDO;
 use PHPatterns\Traits\ModelsTrait;
 use PHPatterns\Database\DatabaseConnection;
+use PHPatterns\Behavioral\Events\NewUserEvent as UserCreatedEvent;
 use PHPatterns\Contracts\Database\Model as ModelContract;
 
 abstract class Model implements ModelContract
@@ -52,7 +53,10 @@ abstract class Model implements ModelContract
      * Creates new data at table
      */
     public static function create(Array $attr) {
-        return $attr;
+        // TODO: Create User object
+        $user = (object) $attr;
+
+        return new UserCreatedEvent($user);
     }
 
 }
