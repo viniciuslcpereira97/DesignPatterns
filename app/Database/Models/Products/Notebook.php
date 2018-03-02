@@ -18,8 +18,7 @@ class Notebook extends Product
     }
 
     public function getPriceWithDisccount() {
-        $visitor = new ProductVisitor;
-        return $this->accept($visitor);        
+        return $this->accept();        
     }
 
 }
