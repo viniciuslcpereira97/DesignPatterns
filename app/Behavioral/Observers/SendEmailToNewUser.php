@@ -11,7 +11,7 @@ class SendEmailToNewUser extends Observer
      *
      */
     public function update(\SplSubject $event) {
-        echo "sending email to: {$event->getName()}\n";
+        echo "sending email to: {$event->user->name}\n";
     }
 
 }

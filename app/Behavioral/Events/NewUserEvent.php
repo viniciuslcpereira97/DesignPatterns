@@ -9,7 +9,7 @@ class NewUserEvent extends Event
 {
 
     // User instance
-    private $user;
+    public $user;
 
     /**
      *
@@ -33,15 +33,6 @@ class NewUserEvent extends Event
             $this->attach(new $observer);
 
         $callback();
-    }
-
-    /**
-     *
-     * Name getter
-     *
-     */
-    public function getName() {
-        return $this->user->name;
     }
 
 }
