@@ -14,8 +14,8 @@ class Headset extends Product
      */
     public function accept()
     {
-        // $visitor = new ProductVisitor;
-        return $this->visitor->getHeadsetDiscount($this);
+        $visitor = new ProductVisitor;
+        return $visitor->getHeadsetDiscount($this);
     }
 
     public function getPriceWithDisccount()

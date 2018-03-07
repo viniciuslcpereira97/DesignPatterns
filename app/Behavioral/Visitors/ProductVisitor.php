@@ -2,7 +2,9 @@
 
 namespace PHPatterns\Behavioral\Visitors;
 
-class ProductVisitor
+use PHPatterns\Contracts\VisitorContract as Visitor;
+
+class ProductVisitor implements Visitor
 {
 
     /**
