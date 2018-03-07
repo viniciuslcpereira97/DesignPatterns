@@ -18,7 +18,8 @@ trait ModelsTrait
      * with the lowest coupling possible
      *
      */
-    private function getById(Int $id) {
+    private function getById(Int $id)
+    {
         return "get by id";
     }
 
@@ -31,7 +32,8 @@ trait ModelsTrait
      * Simple table pluralizer
      *
      */
-    private function pluralizeTable($table) {
+    private function pluralizeTable($table)
+    {
         return "{$table}s";
     }
 
@@ -41,7 +43,8 @@ trait ModelsTrait
      * if attribute is not set, generates pluralized table name
      *
      */
-    private function tableName() {
+    private function tableName()
+    {
         if(isset($this->table)) return $this->table;
         return $this->getTableNameByClassName();
     }
@@ -51,7 +54,8 @@ trait ModelsTrait
      * Reflect called class and generates table name
      *
      */
-    private function getTableNameByClassName() {
+    private function getTableNameByClassName()
+    {
         $caller = new ReflectionClass(get_called_class());
         return $this->pluralizeTable($caller->getShortName());
     }

@@ -19,10 +19,12 @@ class DatabaseConnection extends \PHPatterns\Creational\Singleton\Singleton
      * Handles if PDO Exception was trown
      *
      */
-    protected function __construct() {
+    protected function __construct()
+    {
         try {
             $this->connection = new PDO('mysql:host=localhost;dbname=php_patterns_test', 'root', 'shambala');
-        } catch(PDOException $e) {
+        }
+        catch(PDOException $e) {
             echo "ERROR: {$e}";
         }
     }
@@ -32,7 +34,8 @@ class DatabaseConnection extends \PHPatterns\Creational\Singleton\Singleton
      * Retrieves PDO connection
      *
      */
-    public function __get($name) {
+    public function __get($name)
+    {
         return $this->$name;
     }
 

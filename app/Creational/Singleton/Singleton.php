@@ -21,7 +21,8 @@ abstract class Singleton implements SingletonContract
      * check if instance is initialized, else creates new instance and return
      *
      */
-    public static function getInstance() {
+    public static function getInstance()
+    {
         $called_class = get_called_class();
         if(!isset(self::$instances[$called_class]))
             self::$instances[$called_class] = new $called_class;
@@ -33,6 +34,9 @@ abstract class Singleton implements SingletonContract
      * This prevents to use new outside this class to create new instances
      *
      */
-    private function __construct() {}
+    private function __construct()
+    {
+        
+    }
 
 }

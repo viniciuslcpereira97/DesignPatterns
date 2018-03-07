@@ -13,18 +13,21 @@ class VisitorTest extends TestCase
 
     protected $product_visitor;
 
-    public function setUp() {
+    public function setUp()
+    {
         $this->product_visitor = new ProductVisitor;
     }
 
-    public function testIsVisitingNotebook() {
+    public function testIsVisitingNotebook()
+    {
         $value = 2450.00;
         $product = new Notebook("notebook", $value);
         $product->accept($this->product_visitor);
         $this->assertTrue($value !== $product->getPrice());
     }
 
-    public function testIsVisitingHeadset() {
+    public function testIsVisitingHeadset()
+    {
         $value = 450.00;
         $product = new Headset("headset", $value);
         $product->accept($this->product_visitor);

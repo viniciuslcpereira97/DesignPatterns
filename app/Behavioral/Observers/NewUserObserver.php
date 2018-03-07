@@ -10,7 +10,8 @@ class NewUserObserver extends Observer
      * Update from subject
      *
      */
-    public function update(\SplSubject $event) {
+    public function update(\SplSubject $event)
+    {
         echo "new user: {$event->user->name}\n";
     }
 

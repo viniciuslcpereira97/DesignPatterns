@@ -16,7 +16,8 @@ class NewUserEvent extends Event
      * New user constructor
      *
      */
-    public function __construct($user) {
+    public function __construct($user)
+    {
         $this->user = $user;
         $this->attachObservers(function() {
             return $this->notify();
@@ -28,7 +29,8 @@ class NewUserEvent extends Event
      * Gets and registers all observers
      *
      */
-    public function attachObservers($callback) {
+    public function attachObservers($callback)
+    {
         foreach(EventProvider::getObservers() as $observer)
             $this->attach(new $observer);
 

@@ -13,7 +13,8 @@ abstract class Event implements \SplSubject
      * Attaches new observer to subject
      *
      */
-    public function attach(\SplObserver $observer) {
+    public function attach(\SplObserver $observer)
+    {
         return $this->observers[] = $observer;
     }
 
@@ -22,7 +23,8 @@ abstract class Event implements \SplSubject
      * Detaches observer from subject
      *
      */
-    public function detach(\SplObserver $observer) {
+    public function detach(\SplObserver $observer)
+    {
         if(array_search($observer, $this->observers, true))
             unset($this->observers[$observer]);
     }
@@ -32,7 +34,8 @@ abstract class Event implements \SplSubject
      * Notifies updates to all observers
      *
      */
-    public function notify() {
+    public function notify()
+    {
         if(!count($this->observers) > 0) return;
 
         foreach($this->observers as $observer)

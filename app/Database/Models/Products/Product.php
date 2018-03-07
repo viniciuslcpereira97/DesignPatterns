@@ -19,7 +19,8 @@ abstract class Product extends Model
      * Product constructor
      *
      */
-    public function __construct($productName, $productPrice) {
+    public function __construct($productName, $productPrice)
+    {
         $this->name = $productName;
         $this->price = $productPrice;
     }
@@ -29,7 +30,8 @@ abstract class Product extends Model
      * Product price setter
      *
      */
-    public function setPrice($productPrice) {
+    public function setPrice($productPrice)
+    {
         $this->price = $productPrice;
     }
 
@@ -39,7 +41,8 @@ abstract class Product extends Model
      * @return price
      *
      */
-    public function getPrice() {
+    public function getPrice()
+    {
         return $this->price;
     }
 
@@ -48,7 +51,8 @@ abstract class Product extends Model
      * Product name setter
      *
      */
-    public function setName($productName) {
+    public function setName($productName)
+    {
         $this->name = $productName;
     }
 
@@ -58,7 +62,8 @@ abstract class Product extends Model
      * @return name
      *
      */
-    public function getName() {
+    public function getName()
+    {
         return $this->name;
     }
 

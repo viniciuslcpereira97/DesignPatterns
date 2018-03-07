@@ -20,7 +20,8 @@ class NewUserEventProvider
      * Gets all observers
      *
      */
-    public static function getObservers() {
+    public static function getObservers()
+    {
         return self::observers;
     }
 

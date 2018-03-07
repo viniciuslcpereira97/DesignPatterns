@@ -10,7 +10,8 @@ class InstantiationTest extends Singleton {}
 class SingletonTest extends TestCase
 {
 
-    public function testIsTheSameInstance() {
+    public function testIsTheSameInstance()
+    {
         $first_instance = InstantiationTest::getInstance();
         $second_instance = InstantiationTest::getInstance();
 

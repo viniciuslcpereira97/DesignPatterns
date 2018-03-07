@@ -12,7 +12,8 @@ class Coupon extends Model
      * Generates new Coupon
      *
      */
-    public static function generate() {
+    public static function generate()
+    {
         $instance = new static;
         $instance->hash = $instance->generateHash();
         return $instance;
@@ -23,7 +24,8 @@ class Coupon extends Model
      * Generates Coupon hash
      *
      */
-    private function generateHash() {
+    private function generateHash()
+    {
         $b64 = base64_encode(rand(111111111111, 999999999999));
         return hash('sha256', $b64, false);
     }

@@ -13,7 +13,8 @@ class UserFacade
      * Creates new User and attaches a Coupon for him
      *
      */
-    public static function newUserWithCoupon($userAttr = []) {
+    public static function newUserWithCoupon($userAttr = [])
+    {
         $user = new User;
         if(isset($userAttr) and $userAttr !== [])
             $user->setNickname($userAttr['nickname']);

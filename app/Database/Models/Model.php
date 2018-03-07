@@ -21,7 +21,8 @@ abstract class Model implements ModelContract
      * Model constructor
      *
      */
-    public function __construct() {
+    public function __construct()
+    {
         self::setConnection();
     }
 
@@ -30,14 +31,16 @@ abstract class Model implements ModelContract
      * Gets singleton DatabaseConnection instance
      *
      */
-    public static function setConnection() {
+    public static function setConnection()
+    {
         self::$database = DatabaseConnection::getInstance();
     }
 
     /**
      * Finds model by Id
      */
-    public static function find(Int $id) {
+    public static function find(Int $id)
+    {
         $instance = new static;
         return $instance->getById($id);
     }
@@ -45,14 +48,16 @@ abstract class Model implements ModelContract
     /**
      * Returns all data at table
      */
-    public static function all() {
+    public static function all()
+    {
         return "all";
     }
 
     /**
      * Creates new data at table
      */
-    public static function create(Array $attr) {
+    public static function create(Array $attr)
+    {
         // TODO: Create User object
         $user = (object) $attr;
 

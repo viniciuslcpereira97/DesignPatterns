@@ -17,7 +17,8 @@ class User extends Model
      * Set user nickname
      *
      */
-    public function setNickname($nickname) {
+    public function setNickname($nickname)
+    {
         $this->nickname = $nickname;
     }
 
@@ -26,7 +27,8 @@ class User extends Model
      * Adds coupon for user
      *
      */
-    public function addCoupon(Coupon $coupon) {
+    public function addCoupon(Coupon $coupon)
+    {
         $this->coupon = $coupon;
     }
 
