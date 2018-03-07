@@ -15,7 +15,7 @@ abstract class Event implements \SplSubject
      */
     public function attach(\SplObserver $observer)
     {
-        return $this->observers[] = $observer;
+        $this->observers[] = $observer;
     }
 
     /**
@@ -36,8 +36,10 @@ abstract class Event implements \SplSubject
      */
     public function notify()
     {
+        // Has observers?
         if(!count($this->observers) > 0) return;
 
+        // For each observer notify him
         foreach($this->observers as $observer)
             $observer->update($this);
     }

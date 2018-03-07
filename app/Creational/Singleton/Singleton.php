@@ -13,6 +13,7 @@ use PHPatterns\Contracts\SingletonContract;
  */
 abstract class Singleton implements SingletonContract
 {
+    
     /* instances variable */
     private static $instances;
 
@@ -36,7 +37,7 @@ abstract class Singleton implements SingletonContract
      */
     private function __construct()
     {
-        
+
     }
 
 }

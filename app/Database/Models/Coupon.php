@@ -24,7 +24,7 @@ class Coupon extends Model
      * Generates Coupon hash
      *
      */
-    private function generateHash()
+    private function generateHash() : string
     {
         $b64 = base64_encode(rand(111111111111, 999999999999));
         return hash('sha256', $b64, false);

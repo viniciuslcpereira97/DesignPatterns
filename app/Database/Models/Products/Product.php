@@ -8,10 +8,10 @@ use PHPatterns\Behavioral\Visitors\ProductVisitor;
 abstract class Product extends Model
 {
 
-    /* Product name */
+    // Product name
     private $name;
 
-    /* Product price */
+    // Product price
     private $price;
 
     /**
@@ -41,7 +41,7 @@ abstract class Product extends Model
      * @return price
      *
      */
-    public function getPrice()
+    public function getPrice() : float
     {
         return $this->price;
     }
@@ -62,7 +62,7 @@ abstract class Product extends Model
      * @return name
      *
      */
-    public function getName()
+    public function getName() : string
     {
         return $this->name;
     }
@@ -72,6 +72,6 @@ abstract class Product extends Model
      * Gets price with disccount
      *
      */
-    public abstract function getPriceWithDisccount();
+    public abstract function getPriceWithDisccount() : float;
 
 }

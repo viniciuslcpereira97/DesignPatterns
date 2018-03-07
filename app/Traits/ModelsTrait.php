@@ -32,7 +32,7 @@ trait ModelsTrait
      * Simple table pluralizer
      *
      */
-    private function pluralizeTable($table)
+    private function pluralizeTable($table) : string
     {
         return "{$table}s";
     }
@@ -43,7 +43,7 @@ trait ModelsTrait
      * if attribute is not set, generates pluralized table name
      *
      */
-    private function tableName()
+    private function tableName() : string
     {
         if(isset($this->table)) return $this->table;
         return $this->getTableNameByClassName();
@@ -54,7 +54,7 @@ trait ModelsTrait
      * Reflect called class and generates table name
      *
      */
-    private function getTableNameByClassName()
+    private function getTableNameByClassName() : string
     {
         $caller = new ReflectionClass(get_called_class());
         return $this->pluralizeTable($caller->getShortName());

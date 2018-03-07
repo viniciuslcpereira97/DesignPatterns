@@ -12,7 +12,7 @@ class ProductVisitor implements Visitor
      * Visits Notebook model and calculates discount
      *
      */
-    public function getNotebookDiscount($product)
+    public function getNotebookDiscount($product) : float
     {
         return ($product->getPrice() - 250.00);
     }
@@ -22,7 +22,7 @@ class ProductVisitor implements Visitor
      * Visits Headset model and calculates discount
      *
      */
-    public function getHeadsetDiscount($product)
+    public function getHeadsetDiscount($product) : float
     {
         return ($product->getPrice() - 150.00);
     }

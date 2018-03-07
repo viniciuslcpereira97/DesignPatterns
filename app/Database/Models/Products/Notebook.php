@@ -12,15 +12,10 @@ class Notebook extends Product
      * Accepts visitor
      *
      */
-    public function accept()
+    public function getPriceWithDisccount() : float
     {
         $visitor = new ProductVisitor;
         return $visitor->getNotebookDiscount($this);
-    }
-
-    public function getPriceWithDisccount()
-    {
-        return $this->accept();
     }
 
 }
